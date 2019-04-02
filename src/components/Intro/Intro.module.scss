@@ -1,0 +1,27 @@
+@import "utils.scss";
+@import "header.scss";
+.Intro {
+  background-color: #fff;
+  .main {
+    padding: 60px 10px;
+    .greeting {
+      padding: 10px 0;
+      text-align: center;
+      font-weight: 200;
+      font-size: 1.1rem;
+      font-family: "Nanum Gothic", sans-serif;
+      @include media("<500px") {
+        font-size: 1rem;
+      }
+      @include media("<phone") {
+        font-size: 0.9rem;
+      }
+      .row {
+        line-height: 2.5rem;
+        &.end {
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+}

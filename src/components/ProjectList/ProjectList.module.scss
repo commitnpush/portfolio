@@ -1,0 +1,27 @@
+@import "utils.scss";
+@import "header.scss";
+
+.ProjectList {
+  background-color: #fff;
+  counter-reset: article;
+  position: relative;
+  margin-bottom: 262px;
+  .main {
+    padding: 60px 4vw;
+    @include media(">tablet") {
+      padding: 60px 7vw;
+    }
+  }
+  .tail {
+    $size: 15px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: $size solid #fff;
+    border-bottom: $size solid none;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    left: calc(50% - 15px);
+    bottom: -$size;
+  }
+}

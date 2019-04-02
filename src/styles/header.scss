@@ -1,0 +1,36 @@
+.header {
+  .vertical-bar {
+    width: 1px;
+    height: 15vh;
+    margin: 0 auto;
+    background-color: $oc-indigo-4;
+    &.white {
+      background-color: #fff;
+    }
+  }
+  .title-container {
+    padding: 30px;
+    padding-bottom: 10px;
+    .title {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 200;
+      font-size: 3rem;
+      color: $oc-indigo-4;
+      &.text-white {
+        color: #fff;
+      }
+    }
+    .subtitle {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: $oc-indigo-4;
+      opacity: 0.65;
+      &.text-white {
+        color: #fff;
+      }
+    }
+  }
+}

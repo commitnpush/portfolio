@@ -1,0 +1,67 @@
+@import "utils.scss";
+@import "header.scss";
+.Skills {
+  background-color: #697eb1;
+
+  .main {
+    padding: 60px 10px;
+
+    .skill-container {
+      font-family: "Montserrat, sans-serif";
+      text-align: center;
+      color: white;
+      padding-bottom: 50px;
+      &:last-child {
+        padding-bottom: 0px;
+      }
+      .skills-title {
+        font-size: 1.8rem;
+        font-weight: 200;
+        padding-bottom: 20px;
+        hr {
+          margin: 5px auto;
+          width: 120px;
+          opacity: 0.8;
+        }
+      }
+      .skill {
+        padding: 15px 0;
+        .title {
+          font-weight: 200;
+          font-size: 1.3rem;
+        }
+        ul {
+          padding-left: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          li {
+            line-height: 2rem;
+            position: relative;
+            display: inline;
+            margin-right: 15px;
+            margin-left: 15px;
+            white-space: nowrap;
+            &:last-child {
+              margin-right: 0px;
+            }
+            &:before {
+              font-family: "Font Awesome 5 Free";
+              content: "\f058";
+              display: none; /* We need to hide the pseudo element*/
+            }
+            svg {
+              position: absolute;
+              top: 8px;
+              left: 0px;
+
+              font-size: 0.7rem;
+              margin: 0 5px 0 -15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

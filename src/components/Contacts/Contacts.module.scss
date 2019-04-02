@@ -1,0 +1,30 @@
+@import "utils.scss";
+.Contacts {
+  background-color: #333b59;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 30px;
+  padding-top: 50px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  .title {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+  }
+  .contects {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-40%);
+    .contect {
+      padding: 10px;
+      text-align: left;
+      .key {
+        margin-right: 10px;
+      }
+    }
+  }
+}

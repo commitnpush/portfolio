@@ -1,0 +1,30 @@
+@import "open-color/open-color.scss";
+@import "include-media/dist/include-media.scss";
+
+$breakpoints: (
+  phone: 376px,
+  tablet: 768px,
+  desktop: 1024px,
+  landscape: 1200px
+);
+a {
+  text-decoration: none;
+  color: $oc-indigo-5;
+}
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: $oc-indigo-3;
+  opacity: 0.8;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 20px;
+  width: 170px;
+  transition: background-color 0.2s ease-out;
+  &:hover {
+    background-color: $oc-indigo-5;
+  }
+}

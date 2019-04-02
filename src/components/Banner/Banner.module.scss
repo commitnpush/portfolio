@@ -1,0 +1,69 @@
+@import "utils.scss";
+.Banner {
+  height: 100vh;
+  background-size: cover;
+  background-color: #000;
+  background-image: url("/image/banner.jpg");
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  main {
+    position: relative;
+    flex-grow: 1;
+
+    .title {
+      &.appear {
+        opacity: 0.01;
+        top: 30% !important;
+      }
+
+      &.appearActive {
+        top: 45% !important;
+        opacity: 1;
+        transition: all 0.6s ease-in;
+      }
+      font-family: "Montserrat", sans-serif;
+      transition: transform 1s linear;
+      font-size: calc(5vh + 5vw);
+      font-weight: 200;
+      color: white;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translateX(-50%) translateY(20%);
+      white-space: nowrap;
+    }
+  }
+
+  footer {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    .continue {
+      text-align: center;
+      color: #fff;
+      font-size: 0.8rem;
+      padding-bottom: 10px;
+    }
+    .vertical-bar {
+      position: relative;
+      width: 1px;
+      margin: 0 auto;
+      background-color: #fff;
+      flex-grow: 1;
+      .triangle {
+        position: sticky;
+        top: 0px;
+        width: 0px;
+        height: 0px;
+
+        transform: translateX(-15px);
+
+        border-top: 15px solid white;
+        border-bottom: 15px solid none;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+      }
+    }
+  }
+}

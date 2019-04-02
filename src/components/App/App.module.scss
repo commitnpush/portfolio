@@ -1,0 +1,57 @@
+@import "utils.scss";
+
+.loading-spinner {
+  background-color: #000;
+  height: 100vh;
+  div {
+    height: 100vh;
+    svg {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+.App {
+  display: relative;
+  .menu {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #fff;
+    transition: color 0.3s ease-in;
+
+    z-index: 1000;
+    cursor: pointer;
+    .line-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .vertical-line {
+        height: 0px;
+        border-top: 2px solid #fff;
+      }
+    }
+    &:hover {
+      .line-container .vertical-line {
+        border-color: #777;
+      }
+    }
+    &.black {
+      .line-container .vertical-line {
+        border-top: 2px solid #000;
+      }
+      &:hover {
+        .line-container .vertical-line {
+          border-color: #777;
+        }
+      }
+    }
+  }
+}

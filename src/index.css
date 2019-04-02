@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+small {
+  font-size: 50%;
+}
+
+/*Override Image Gallary*/
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  font-size: 2.5rem !important;
+}
+
+@media (max-width: 768px) {
+  .image-gallery-left-nav,
+  .image-gallery-right-nav {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-gallery-left-nav,
+  .image-gallery-right-nav {
+    font-size: 1.5rem !important;
+  }
+}
+
+.wall-enter {
+  height: 0 !important;
+}
+.wall-enter.wall-enter-active {
+  height: 100vh !important;
+  transition: height 0.5s ease-in;
+}
+
+.wall-leave {
+  opacity: 1 !important;
+}
+.wall-leave.wall-leave-active {
+  opacity: 0 !important;
+  transition: opacity 0.5s ease-in;
+}

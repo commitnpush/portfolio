@@ -1,0 +1,57 @@
+@import "utils.scss";
+
+.Wall {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  padding: 30vh 10vw;
+  .menu-container {
+    color: white;
+    z-index: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    .menu {
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+      font-family: "Montserrat", sans-sarif;
+      font-weight: 200;
+      font-size: 3rem;
+      @include media("<tablet") {
+        font-size: 2rem;
+      }
+      @include media("<phone") {
+        font-size: 1.5rem;
+      }
+      cursor: pointer;
+      &:hover {
+        color: $oc-indigo-6;
+        transition: all 0.15s ease-in;
+      }
+    }
+  }
+}
+
+:global {
+  .wall-enter {
+    top: -100vh !important;
+  }
+  .wall-enter.wall-enter-active {
+    top: 0 !important;
+    transition: top 0.3s ease-in;
+  }
+
+  .wall-leave {
+    opacity: 1 !important;
+  }
+  .wall-leave.wall-leave-active {
+    opacity: 0 !important;
+    transition: opacity 0.5s ease-out;
+  }
+}
