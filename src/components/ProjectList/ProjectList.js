@@ -16,7 +16,9 @@ export default function(props) {
         <div className={cx('title-container')}>
           <header>
             <div className={cx('title')}>{props.title}</div>
-            <div className={cx('subtitle')}>What I did</div>
+            <div className={cx('subtitle')}>
+              What I {props.title === 'Career' ? 'do' : 'did'}
+            </div>
           </header>
         </div>
       </header>
