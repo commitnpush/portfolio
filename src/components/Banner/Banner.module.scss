@@ -1,9 +1,9 @@
-@import "utils.scss";
+@import 'utils.scss';
 .Banner {
   height: 100vh;
   background-size: cover;
   background-color: #000;
-  background-image: url("/image/banner.jpg");
+  background-image: url('../image/banner.jpg');
   background-position: center center;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
         opacity: 1;
         transition: all 0.6s ease-in;
       }
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       transition: transform 1s linear;
       font-size: calc(5vh + 5vw);
       font-weight: 200;
