@@ -1,5 +1,5 @@
-@import "utils.scss";
-@import "header.scss";
+@import 'utils.scss';
+@import 'header.scss';
 
 .ProjectList {
   background-color: #fff;
@@ -8,7 +8,7 @@
   margin-bottom: 262px;
   .main {
     padding: 60px 4vw;
-    @include media(">tablet") {
+    @include media('>tablet') {
       padding: 60px 7vw;
     }
   }
@@ -23,5 +23,17 @@
     border-right: $size solid transparent;
     left: calc(50% - 15px);
     bottom: -$size;
+  }
+}
+
+.Career {
+  margin-bottom: 0px;
+}
+
+.Personal {
+  .header {
+    .vertical-bar {
+      height: 30vh !important;
+    }
   }
 }

@@ -7,13 +7,16 @@
     &.white {
       background-color: #fff;
     }
+    &.vertical-bar--personal {
+      height: 30vh;
+    }
   }
   .title-container {
     padding: 30px;
     padding-bottom: 10px;
     .title {
       text-align: center;
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 200;
       font-size: 3rem;
       color: $oc-indigo-4;
@@ -23,7 +26,7 @@
     }
     .subtitle {
       text-align: center;
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 400;
       font-size: 1rem;
       color: $oc-indigo-4;
