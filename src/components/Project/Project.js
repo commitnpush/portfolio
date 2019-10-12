@@ -9,7 +9,7 @@ export default function Project(props) {
   if (props.image) {
     for (let i = 0; i <= props.image.end; i++) {
       images.push({
-        original: `/image/${props.image.title}-${i}.png`,
+        original: `image/${props.image.title}-${i}.png`,
         originalAlt: props.image.vertical >= i ? 'vertical' : ''
       });
     }

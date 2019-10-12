@@ -46,7 +46,7 @@ export default function Wall(props) {
             props.onClick('Personal Project');
           }}
         >
-          Project
+          Personal Project
         </div>
       </div>
     </section>
