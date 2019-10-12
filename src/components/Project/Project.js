@@ -1,7 +1,7 @@
-import React from "react";
-import classNames from "classnames/bind";
-import styles from "./Project.module.scss";
-import ImageGallery from "react-image-gallery";
+import React from 'react';
+import classNames from 'classnames/bind';
+import styles from './Project.module.scss';
+import ImageGallery from 'react-image-gallery';
 const cx = classNames.bind(styles);
 
 export default function Project(props) {
@@ -9,17 +9,17 @@ export default function Project(props) {
   if (props.image) {
     for (let i = 0; i <= props.image.end; i++) {
       images.push({
-        original: `/image/${props.image.title}-${i}.png`,
-        originalAlt: props.image.vertical >= i ? "vertical" : ""
+        original: `/portfolio/image/${props.image.title}-${i}.png`,
+        originalAlt: props.image.vertical >= i ? 'vertical' : ''
       });
     }
   }
   return (
-    <article className={cx("Project")}>
+    <article className={cx('Project')}>
       <div
-        className={cx("project-container", { reverse: props.index % 2 === 1 })}
+        className={cx('project-container', { reverse: props.index % 2 === 1 })}
       >
-        <div className={cx("example")}>
+        <div className={cx('example')}>
           <ImageGallery
             lazyLoad={true}
             items={images}
@@ -29,30 +29,30 @@ export default function Project(props) {
             slideDuration={200}
           />
         </div>
-        <div className={cx("info")}>
-          <div className={cx("title")}>{props.title}</div>
-          <ul className={cx("spec")}>
+        <div className={cx('info')}>
+          <div className={cx('title')}>{props.title}</div>
+          <ul className={cx('spec')}>
             {Object.keys(props.spec).map(key => (
-              <li key={key} className={cx("item")}>
-                <strong className={cx("key")}>{key}</strong>
-                <span className={cx("value")}>{props.spec[key]}</span>
+              <li key={key} className={cx('item')}>
+                <strong className={cx('key')}>{key}</strong>
+                <span className={cx('value')}>{props.spec[key]}</span>
               </li>
             ))}
           </ul>
-          <div className={cx("description")}>
+          <div className={cx('description')}>
             {props.descriptions.map((e, i) => (
-              <div className={cx("row")} key={i}>
+              <div className={cx('row')} key={i}>
                 {e}
               </div>
             ))}
           </div>
-          <div className={cx("action")}>
+          <div className={cx('action')}>
             {props.demo && (
               <a
                 href={props.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cx("btn")}
+                className={cx('btn')}
               >
                 Demo
               </a>
@@ -62,7 +62,7 @@ export default function Project(props) {
                 href={props.repository}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cx("btn")}
+                className={cx('btn')}
               >
                 Repository
               </a>
@@ -72,7 +72,7 @@ export default function Project(props) {
                 href={props.repository_client}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cx("btn")}
+                className={cx('btn')}
               >
                 Repos (client)
               </a>
@@ -82,7 +82,7 @@ export default function Project(props) {
                 href={props.repository_server}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cx("btn")}
+                className={cx('btn')}
               >
                 Repos (server)
               </a>
@@ -92,7 +92,7 @@ export default function Project(props) {
                 href={props.user_page}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cx("btn")}
+                className={cx('btn')}
               >
                 User page
               </a>
@@ -102,7 +102,7 @@ export default function Project(props) {
                 href={props.manager_page}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cx("btn")}
+                className={cx('btn')}
               >
                 Manager page
               </a>
