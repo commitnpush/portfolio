@@ -1,5 +1,5 @@
 {
-  "main.css": "/portfolio/static/css/main.736e8105.chunk.css",
+  "main.css": "/portfolio/static/css/main.1c50ced4.chunk.css",
   "main.js": "/portfolio/static/js/main.c27b20af.chunk.js",
   "main.js.map": "/portfolio/static/js/main.c27b20af.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
@@ -8,9 +8,9 @@
   "static/js/2.e5093bff.chunk.js": "/portfolio/static/js/2.e5093bff.chunk.js",
   "static/js/2.e5093bff.chunk.js.map": "/portfolio/static/js/2.e5093bff.chunk.js.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.60499dfcd9f84d29f9b646eda5dad7e6.js": "/portfolio/precache-manifest.60499dfcd9f84d29f9b646eda5dad7e6.js",
+  "precache-manifest.00969c123b7b91d669b6c878208344c7.js": "/portfolio/precache-manifest.00969c123b7b91d669b6c878208344c7.js",
   "service-worker.js": "/portfolio/service-worker.js",
   "static/css/2.bd725b08.chunk.css.map": "/portfolio/static/css/2.bd725b08.chunk.css.map",
-  "static/css/main.736e8105.chunk.css.map": "/portfolio/static/css/main.736e8105.chunk.css.map",
+  "static/css/main.1c50ced4.chunk.css.map": "/portfolio/static/css/main.1c50ced4.chunk.css.map",
   "static/media/font-awesome.min.css": "/portfolio/static/media/fontawesome-webfont.fee66e71.woff"
 }
