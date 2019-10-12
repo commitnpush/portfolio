@@ -1,10 +1,11 @@
-import React, { Component } from "react";
-import classNames from "classnames/bind";
-import styles from "./App.module.scss";
-import { Banner, Intro, Skills, ProjectList, Contacts, Wall } from "components";
-import Loader from "react-loader-spinner";
-import projects from "data/projects";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import React, { Component } from 'react';
+import classNames from 'classnames/bind';
+import styles from './App.module.scss';
+import { Banner, Intro, Skills, ProjectList, Contacts, Wall } from 'components';
+import Loader from 'react-loader-spinner';
+import projects from 'data/projects';
+import careers from 'data/careers';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 const cx = classNames.bind(styles);
 
 class App extends Component {
@@ -39,34 +40,34 @@ class App extends Component {
     });
   };
   componentWillUnmount() {
-    window.removeEventListener("scroll", this._scrollHander);
+    window.removeEventListener('scroll', this._scrollHander);
   }
   componentDidMount() {
     setTimeout(() => {
       this.setState({ loading: false });
     }, 500);
-    window.addEventListener("scroll", this._scrollHander);
+    window.addEventListener('scroll', this._scrollHander);
   }
   render() {
     const loader = (
-      <div className={cx("loading-spinner")}>
+      <div className={cx('loading-spinner')}>
         <Loader type="Oval" color="white" height="50" width="50" />
       </div>
     );
     return this.state.loading ? (
       loader
     ) : (
-      <div className={cx("App")}>
+      <div className={cx('App')}>
         <div
           id="menu"
           ref={ref => (this.menu = ref)}
-          className={cx("menu", { black: !this.state.isBanner })}
+          className={cx('menu', { black: !this.state.isBanner })}
           onClick={this._handleToggleShowWall}
         >
-          <div className={cx("line-container")}>
-            <div className={cx("vertical-line")} />
-            <div className={cx("vertical-line")} />
-            <div className={cx("vertical-line")} />
+          <div className={cx('line-container')}>
+            <div className={cx('vertical-line')} />
+            <div className={cx('vertical-line')} />
+            <div className={cx('vertical-line')} />
           </div>
         </div>
 
@@ -81,7 +82,8 @@ class App extends Component {
         <Banner />
         <Intro />
         <Skills />
-        <ProjectList projects={projects} />
+        <ProjectList projects={careers} title="Career" />
+        <ProjectList projects={projects} title="Personal Project" />
         <Contacts />
       </div>
     );
